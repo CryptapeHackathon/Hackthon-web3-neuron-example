@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@nervos/web3": "0.17.9"
+    "@nervos/web3": "0.17.11"
   },
   "author": "ethdev.com",
   "license": "LGPL-3.0"

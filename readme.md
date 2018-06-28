@@ -2,7 +2,7 @@
 This is a simple example for you to learn how to make a simple dapp on Neuron.
 
 ## Dependency
-* [NPM](https://www.npmjs.com/get-npm)
+* [node](https://nodejs.org/en/download/package-manager/)
 * [Java](https://java.com/en/download/help/download_options.xml)
 
 NPM is for install Nervos web3.js as well as dependencies.
