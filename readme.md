@@ -14,8 +14,9 @@ Clone the repo first
 git clone https://github.com/CryptapeHackathon/Hackthon-web3-neuron-example.git
 ```
 
-Get the dependecies
+Get the dependecies, the web3.js we are using is `"@cita/web3": "0.1.7"`, although it's deprecated...
 ```
+cd Hackthon-web3-neuron-example 
 npm install
 ```
 
