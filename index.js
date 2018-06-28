@@ -16,15 +16,11 @@ function init() {
       div.innerHTML = 'Web Initialized';
     }
 
-    // bind events with DOM element
-    const sendETHButton = document.getElementById('send_eth')
-    sendETHButton.addEventListener('click', sendETHTransaction)
-
-    // bind events with DOM element
+    // bind events with function
     const sendCITAButton = document.getElementById('send_cita')
     sendCITAButton.addEventListener('click', sendAppChainTransaction)
 
-    // bind events with DOM element
+    // bind events with function
     const signButton = document.getElementById('sign')
     signButton.addEventListener('click', signTransaction)
 
