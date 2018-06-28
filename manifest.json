@@ -1,0 +1,16 @@
+{
+    "shortName": "Nervos Chain",
+    "name": "Nervos Chain",
+    "chainId": "1",
+    "httpProvider": "http://47.94.105.230:1337",
+    "blockViewer": "https://etherscan.io/",
+    "networkId": "manifest",
+    "chainset": [{
+      "chainId": "12345",
+      "networkId": "ignore",
+      "httpProvider": "http://47.94.105.230:1337"
+    }],
+    "icon": "http://7xq40y.com1.z0.glb.clouddn.com/bluelion.jpeg",
+    "entry": "https://www.cryptape.com/",
+    "provider": "CITA"
+  }
