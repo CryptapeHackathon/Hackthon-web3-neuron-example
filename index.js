@@ -17,14 +17,14 @@ function init() {
     sendETHButton.addEventListener('click', sendETHTransaction)
 
     const sendCITAButton = document.getElementById('send_cita')
-    sendCITAButton.addEventListener('click', sendCITATransaction)
+    sendCITAButton.addEventListener('click', sendAppChainTransaction)
 
     const signButton = document.getElementById('sign')
     signButton.addEventListener('click', signTransaction)
 
 }
 
-var tx = {
+var tx_eth = {
   "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
   "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567",
   "gasLimit": "0x76c0", 
@@ -34,7 +34,23 @@ var tx = {
 }
 
 function sendETHTransaction() {
-  web3.eth.sendTransaction(tx, function(err, res){
+  web3.eth.sendTransaction(tx_eth, function(err, res){
+    console.log(res)
+  })
+}
+
+var tx_appchain = {
+  to: '0x2cc18375F32a98EfC017D1dDEBCEBD6F9Ee75152',
+  nonce: 100,
+  quota: 100,
+  data: '0x2cc18375F32a98EfC017D1dDEBCEBD6F9Ee75152',
+  value: "10000000000000000000",
+  chainId: 1,
+  version: 0
+}
+
+function sendAppChainTransaction() {
+  web3.eth.sendTransaction(tx_appchain, function(err, res){
     console.log(res)
   })
   
@@ -52,32 +68,15 @@ function onSignFail(err) {
     console.log("transaction err: " + err);
 }
 
-
-var tx1 = {
-  to: '0x2cc18375F32a98EfC017D1dDEBCEBD6F9Ee75152',
-  nonce: 100,
-  quota: 100,
-  data: '0x2cc18375F32a98EfC017D1dDEBCEBD6F9Ee75152',
-  value: "10000000000000000000",
-  chainId: 1,
-  version: 0
-}
-
-function sendCITATransaction() {
-  web3.eth.sendTransaction(tx1, function(err, res){
-    console.log(res)
-  })
-  
-}
-
-
 function signTransaction() {
-  web3.eth.signTransaction(tx, function(err, res) {
+  web3.eth.signTransaction(tx_appchain, function(err, res) {
     if (!err) {
       console.log(res)
     }
   })
 }
+
+
 
 
 window.onload = init()
