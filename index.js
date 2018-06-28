@@ -40,6 +40,18 @@ function sendETHTransaction() {
   
 }
 
+function cancelled() {
+    console.log("transaction cancel");
+}
+
+function onSignSuccessful(hash) {
+    console.log("transaction hash: " + hash);
+}
+
+function onSignFail(err) {
+    console.log("transaction err: " + err);
+}
+
 
 var tx1 = {
   to: '0x2cc18375F32a98EfC017D1dDEBCEBD6F9Ee75152',
