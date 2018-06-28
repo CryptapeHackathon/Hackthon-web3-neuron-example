@@ -26,4 +26,4 @@ python -m SimpleHTTPServer 3000
 
 Visit it on Neuron: `http://YOUR-IP-ADDRESS:3000`, for example "http://192.168.2.239:3000"
 
-For other information, refer [the document](https://github.com/cryptape/nervos-appchain-docs)
+For other information, refer [the document](https://cryptape.github.io/Nervos-AppChain-Docs/#/)
